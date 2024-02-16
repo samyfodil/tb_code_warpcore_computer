@@ -4,7 +4,7 @@ use taubyte_sdk::event::Event;
 #[no_mangle]
 pub fn ping(event: Event) -> u32 {
     let http = event.http().unwrap();
-    _ = http.write("--live long and rust--".as_bytes()).unwrap();
+    _ = http.write("**--live long and rust--**".as_bytes()).unwrap();
 
     0
 }
